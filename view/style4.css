@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: none;
+
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+body {
+    height: 100vh !important;
+    background-image: linear-gradient(120deg, rgb(255, 255, 255), rgb(255, 255, 255) 60%, rgb(255, 0, 0) 60%, rgb(97, 14, 14)) !important;
+    background-attachment: fixed;
+}
+
+li,
+a {
+    font-family: "Monteserrat", sans-serif;
+    font-weight: 400;
+    font: size 16px;
+    color: rgb(252, 252, 252) !important;
+    text-decoration: none !important;
+
+}
+
+header {
+
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgba(6, 0, 0, 0.7);
+}
+
+.logo {
+    cursor: pointer;
+    height: 3em;
+}
+
+.nav_links {
+    list-style: none !important;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 10px;
+
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: rgb(255, 2, 2) !important;
+}
+
+main {
+    background-color: rgb(240, 233, 233, 0);
+}
+
+.myButtonDiv {
+    margin-top: 131px !important;
+
+}
+
+.bigFont {
+    font-size: 41px;
+
+}
+
+.mediumFont {
+    font-size: 21;
+}
+
+.MyButton {
+    position: relative;
+    font-size: 18px;
+    color: black;
+    padding: 4px 21px;
+    border-radius: 17px;
+    border: none;
+	background: linear-gradient(-45deg, red, #f1c4c4, rgb(241, 90, 90), #f4c4c4);
+	background-size: 200% 200%;
+	animation: gradient 11s ease infinite;
+	height: 100%;
+    border:1px solid white;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.MyButton:hover{
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 5px;
+}
+
+
+
+#wholeDiv {
+    position: relative;
+}
+
+#wholeDiv::after {
+    content: "?";
+    position: absolute;
+    right: 51px;
+    z-index: -1;
+    top: -201px;
+    color: rgb(253, 97, 97);
+    font-size: 288px;
+    font-weight: 700;
+
+
+}
+
+.pic1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+
+
+}
+
+@media (max-width:1150px) {
+    .pic1 {
+        display: none;
+    }
+
+}
+
+
+
+.myButtonDiv2{
+   
+    display: none;
+}
+
+@media (max-width:1150px) {
+    .myButtonDiv2 {
+        display:block ;
+    }
+
+}@media (max-height:650px) {
+    .pic1 {
+        display: none;
+        
+    }
+    
+
+}
+@media (max-width:700px) {
+    .pic1 {
+        display: none;
+    }
+    .myButtonDiv2{
+        display: none;
+    }
+
+}
+.modal .modal-dialog .modal-content{  
+    
+    background: linear-gradient(135deg,rgba(255,255,255,0.7),rgba(255,255,255,0.7));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.18);
+    box-shadow:0 8px 32px 0 rgba(0,0,0,0.37);
+ }
+
+ .MyButton2 {
+    position: relative;
+    background-color: rgba(255,0,0,1);
+    color: white;
+    padding: 4px 21px;
+    border-radius: 17px;
+   
+
+}
+
+.MyButton2::after {
+    border: 2px solid black;
+    content: "";
+    position: absolute;
+    width: 101%;
+    height: 101%;
+    left: 0;
+    z-index: 1;
+    bottom: 0;
+    transition: transform 0.3s ease;
+    border-radius: 17px;
+
+
+}
+
+.MyButton2:hover::after {
+    transform: translate(5px, -5px);
+
+}
+.floor{
+
+position: relative;
+}
+
+
+.floor:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: 
+  rgb(255, 2, 2);
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
+  }
+  
+  .floor:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  } 
+  label{
+    width: 100%;
+}
+input[type="text"],input[type="email"],input[type="time"],input[type="date"],input[type="password"],#pass{
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+  text-align: center;
+  
+}
+
+ .MyButton3 {
+    width: 100px;
+    position: relative;
+    background: linear-gradient(to right top,red,rgba(255,255,255,0.5));
+    padding: 4px 21px;
+    border-radius: 17px;
+    border: none;overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 1);
+    
+    
+  }
+  
+  .MyButton3::after{
+    content: "";
+    background-color: rgba(255,255,255,0.5);
+    height: 150%;
+    width: 15px;
+    position: absolute;
+    left: -19px;
+    top: -6px;
+    transition: transform 0.3s;
+    transform: rotate(20deg);
+
+  }
+  .MyButton3:hover::after{
+    transform: translateX(120px) rotate(20deg);
+  }
+  .social{
+    border: 1px solid white;
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    border-radius:0 10px 10px 0;
+    border-left:0px ;
+    width: 25px;
+  }
+  .social:hover{
+    background: linear-gradient(-45deg, white, #f1c4c4, rgb(241, 90, 90), #f4c4c4);
+	background-size: 200% 200%;
+	animation: gradient 11s ease infinite;
+    box-shadow: 2px 2px 5px;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+  .SocialButtonDiv{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+
+  }
+  .SocialButton{
+    width: 100%;
+    border: none;
+}
+.toast{
+    background-color: white!important;
+}
+.visibility{
+    visibility: hidden!important;
+}
+#table1 {
+    border: 1px solid black;
+    border-collapse: collapse;
+ }
+#table1 td {
+    border: 1px solid black;
+    padding: 5px;
+ }
